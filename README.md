@@ -1,10 +1,8 @@
 # Twinku website
 
-Static landing page for **www.twinku.com.ng**, built from the Figma file *Website → NEW WEBSITE - Visuals → Home*.
+Static mirror of the Twinku Webflow site (designer: twinku-website.design.webflow.com), served on Vercel at **www.twinku.com.ng**.
 
-- `index.html` – page markup
-- `styles.css` – styles (Satoshi via Fontshare, brand blue `#1251C4`)
-- `script.js` – hero image rotation (every 2s), nav dropdowns, mobile menu, feature highlights
-- `assets/` – hero photos and logo mark
+- `*.html`, `post/*.html` – pages (clean URLs via `vercel.json`)
+- `wf/` – Webflow CSS, JS, images and videos, self-hosted
 
-No build step. Deployed on Vercel as a static site; every push to `main` redeploys.
+To update: edit in Webflow, publish to staging, then re-run the mirror script and commit.
